@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">vrv_security</string>
+    <string name="default_web_client_id">691493142242-g36ki8f0t07lf0o36dl12fgeet9sh3qf.apps.googleusercontent.com</string>
+    <string name="customer">Customer</string>
+    <string name="select_your_role">Select Your Role</string>
+    <string name="farmer">Farmer</string>
+</resources>

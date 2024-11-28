@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "691493142242",
+    "project_id": "vrvsecurity-5f773",
+    "storage_bucket": "vrvsecurity-5f773.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691493142242:android:22dd73a657dc7c109ca8bb",
+        "android_client_info": {
+          "package_name": "com.example.vrv_security"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691493142242-rtm3a814dtq4p38ofe3luq8jkrpgd800.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vrv_security",
+            "certificate_hash": "270d4d621b77122d764ad9183cdc661bd855a448"
+          }
+        },
+        {
+          "client_id": "691493142242-g36ki8f0t07lf0o36dl12fgeet9sh3qf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZCtY8HJVkynEODXbY7Ry7lw6FU8F20gs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691493142242-g36ki8f0t07lf0o36dl12fgeet9sh3qf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
