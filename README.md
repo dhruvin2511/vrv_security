@@ -102,14 +102,15 @@ https://github.com/user-attachments/assets/7b8c3941-a0a6-47d3-bd16-3d3bd32b8ef3
    - Enable Firebase Authentication and Realtime Database in the Firebase Console.
 4. Update the Realtime Database rules for read/write permissions:
    ```json
-   {
-    "rules": {
-      "user": {
-        ".read": "auth != null",
-        ".write": "auth != null"
-      }
-    }
-  }
+      {
+       "rules": {
+         "user": {
+           ".read": "auth != null",
+           ".write": "auth != null"
+         }
+       }
+     }
+  
 5. Build and run the app on an emulator or physical device.
 
 ---
