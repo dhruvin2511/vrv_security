@@ -89,9 +89,8 @@ class SignupActivity : AppCompatActivity() {
         }
     }
 
-    /**
-     * Creates a new user account using Firebase Authentication
-     */
+    // Create a new user account using Firebase Authentication
+
     private fun createAccount(email: String, password: String) {
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener { task ->
             if (task.isSuccessful) {
@@ -111,9 +110,8 @@ class SignupActivity : AppCompatActivity() {
         }
     }
 
-    /**
-     * Saves user data to Firebase Realtime Database
-     */
+    // Save user data to Firebase Realtime Database
+
     private fun saveUserData() {
         val user = UserInfo(userName, email, password, role)
         val userId: String = FirebaseAuth.getInstance().currentUser!!.uid
@@ -121,10 +119,8 @@ class SignupActivity : AppCompatActivity() {
         // Save user data to Firebase Database
         database.child("user").child(userId).setValue(user)
     }
+    // checks if tthe user already exists in the database
 
-    /**
-     * Checks if the user already exists in the database
-     */
     private fun checkIfUserExists(email: String, userName: String) {
         // Check if email already exists
         database.child("user").orderByChild("email").equalTo(email).get()
@@ -151,10 +147,8 @@ class SignupActivity : AppCompatActivity() {
             }
     }
 
-    /**
-     * This function checks if the provided password meets the minimum length requirement.
-     * A password should be at least 6 characters long.
-     */
+    // This function checks if the provided password meets the minimum length requirement.
+
     private fun isPasswordValid(password: String): Boolean {
         return password.length >= 6
     }

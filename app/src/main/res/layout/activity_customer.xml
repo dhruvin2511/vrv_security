@@ -8,12 +8,65 @@
     tools:context=".CustomerActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/customerTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Customer "
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Customer Dashboard"
+        android:textColor="@android:color/black"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/browseProductsButton"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/greenbuttongradient"
+        android:text="Browse Products"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/customerTitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/customerTitle"
+        app:layout_constraintTop_toBottomOf="@id/customerTitle" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/viewOrderHistoryButton"
+        android:layout_width="325dp"
+        android:background="@drawable/greenbuttongradient"
+        android:layout_height="57dp"
+        android:layout_marginTop="48dp"
+        android:text="View Order History"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/browseProductsButton"
+        app:layout_constraintStart_toStartOf="@+id/browseProductsButton"
+        app:layout_constraintTop_toBottomOf="@id/browseProductsButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/placeOrderButton"
+        android:layout_width="325dp"
+        android:background="@drawable/greenbuttongradient"
+        android:layout_height="57dp"
+        android:layout_marginTop="48dp"
+        android:text="Place New Order"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/viewOrderHistoryButton"
+        app:layout_constraintStart_toStartOf="@+id/viewOrderHistoryButton"
+        app:layout_constraintTop_toBottomOf="@id/viewOrderHistoryButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logoutButton"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="152dp"
+        android:text="Logout"
+        android:background="@drawable/greenbuttongradient"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/placeOrderButton"
+        app:layout_constraintStart_toStartOf="@+id/placeOrderButton"
+        app:layout_constraintTop_toBottomOf="@id/placeOrderButton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
